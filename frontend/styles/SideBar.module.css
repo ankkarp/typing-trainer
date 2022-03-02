@@ -1,0 +1,22 @@
+#sidebar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 200px;
+  height: 100%;
+  background-color: rgb(163, 163, 163);
+}
+
+#sidebar ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+#ide {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 1px black;
+  font-size: large;
+}

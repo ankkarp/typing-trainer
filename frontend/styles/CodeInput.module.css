@@ -1,0 +1,12 @@
+#code {
+  position: absolute;
+  left: 250px;
+  top: 50px;
+  width: 700px;
+  height: 500px;
+  background-color: grey;
+  position: relative;
+  border-radius: 20px;
+  text-align: start;
+  padding: 30px 20px;
+}
