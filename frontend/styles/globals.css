@@ -1,9 +1,37 @@
+:root {
+  --background: #9b9b9b;
+  --code-background: #383838;
+  --header-background: #646464;
+  --sidebar-background: #727272;
+  --task-background: #6e6e6e;
+  --text-color: rgb(14, 14, 14);
+  --code-color-main: rgb(241, 241, 241);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: Consolas, "Courier New", monospace;
-  background-color: lightgrey;
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+a {
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: rgba(219, 220, 226, 0.164);
+}
+
+li {
+  height: 50px;
+  vertical-align: middle;
+}
+
+ul {
+  padding: 20px;
 }
 
 button,

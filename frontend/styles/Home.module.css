@@ -1,3 +1,10 @@
 #header {
-  background-color: cadetblue;
+  background-color: var(--header-background);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60vw;
+  gap: 10px;
 }

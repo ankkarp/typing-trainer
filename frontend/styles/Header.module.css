@@ -1,12 +1,11 @@
 #header {
-  background-color: rgb(163, 163, 163);
+  background-color: var(--header-background);
   height: 50px;
   z-index: 0;
 }
 
 #header h1 {
   padding: 0.5em;
-  color: black;
   font-weight: lighter;
   font-size: x-large;
   margin: 0 0;

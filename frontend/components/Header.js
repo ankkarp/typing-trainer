@@ -1,9 +1,9 @@
 import cl from "../styles/Header.module.css";
 
-const Header = () => {
+const Header = ({ theme }) => {
   return (
     <header id={cl.header}>
-      <h1>Theme | Тема</h1>
+      <h1>{theme}</h1>
     </header>
   );
 };

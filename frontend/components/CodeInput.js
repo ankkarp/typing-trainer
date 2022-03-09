@@ -1,16 +1,24 @@
 import { useState } from "react";
 import cl from "../styles/CodeInput.module.css";
+import { useEffect } from "react";
 
-const CodeInput = ({ desiredCode }) => {
-  const [enteredText, setEnteredText] = useState("");
+const CodeInput = ({ initCode, desiredCode, disabled }) => {
+  const [code, setCode] = useState(initCode);
+
+  useEffect(() => {
+    setCode(initCode);
+  }, [initCode]);
+
+  console.log(initCode);
 
   return (
     <textarea
       id={cl.code}
       type="text"
-      value={enteredText}
+      value={code}
       placeholder={desiredCode}
-      onChange={(e) => setEnteredText(e.target.value)}
+      onChange={(e) => setCode(e.target.value)}
+      disabled={disabled}
     />
   );
 };

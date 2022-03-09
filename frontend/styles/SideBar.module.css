@@ -4,7 +4,7 @@
   top: 0px;
   width: 200px;
   height: 100%;
-  background-color: rgb(163, 163, 163);
+  background-color: var(--sidebar-background);
 }
 
 #sidebar ul {
@@ -19,4 +19,12 @@
   border-radius: 5px;
   box-shadow: 1px 1px black;
   font-size: large;
+  background-color: var(--code-background);
+  color: var(--code-color-main);
+}
+
+.list {
+  position: absolute;
+  top: 70px;
+  left: 0;
 }
