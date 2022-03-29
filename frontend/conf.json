@@ -1,0 +1,30 @@
+{
+    "source": {
+        "includePattern": ".+\\.(jsdoc|jsx|js)?",
+        "include": [
+            "."
+        ],
+        "exclude": [
+            "node_modules",
+            ".next",
+            "docs"
+        ]
+    },
+    "recurseDepth": 10,
+    "opts": {
+        "destination": "./docs/",
+        "recurse": true
+    },
+    "sourceType": "module",
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": [
+            "jsdoc",
+            "closure"
+        ]
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    }
+}

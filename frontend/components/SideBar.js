@@ -1,5 +1,8 @@
 import cl from "../styles/SideBar.module.css";
 
+/**
+ * Боковая панель
+ */
 const SideBar = ({ themes, setCur, data }) => {
   return (
     <div id={cl.sidebar}>

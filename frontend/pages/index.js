@@ -6,6 +6,9 @@ import path from "path";
 import Task from "../components/Task";
 import cl from "../styles/Home.module.css";
 
+/**
+ * Главная страница
+ */
 export default function Home({ data }) {
   const [ide, setIde] = useState("Visual Studio 2021");
   const [cur, setCur] = useState(data[0]);

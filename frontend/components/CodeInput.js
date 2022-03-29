@@ -2,6 +2,9 @@ import { useState } from "react";
 import cl from "../styles/CodeInput.module.css";
 import { useEffect } from "react";
 
+/**
+ * Окно ввода тренажера / требуемого кода
+ */
 const CodeInput = ({ initCode, desiredCode, disabled }) => {
   const [code, setCode] = useState(initCode);
 

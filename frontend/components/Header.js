@@ -1,5 +1,8 @@
 import cl from "../styles/Header.module.css";
 
+/**
+ * Заголовок
+ */
 const Header = ({ theme }) => {
   return (
     <header id={cl.header}>
