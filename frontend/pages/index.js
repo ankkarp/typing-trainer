@@ -9,8 +9,26 @@ import cl from "../styles/Home.module.css";
 /**
  * Главная страница
  */
-export default function Home({ data }) {
+export default function Home() {
   const [ide, setIde] = useState("Visual Studio 2021");
+  const data = [
+    {
+      theme: "Копирование/Вставка",
+      init_code:
+        'void drowCube(int res)\n{\nswitch (res){\ncase 1: cout << "@@@@@@@\\n"; \nbreak; \ncase 2: \n',
+      desired_code:
+        'void drowCube(int res)\n{\nswitch (res){\ncase 1: cout << "@@@@@@@\\n"; \nbreak; \ncase 2: \ncout << "@@@@@@@\\n"; \ncout << "@ @@@@@\\n"; \ncout << "@@@@@@@\\n"; \ncout << "@@@@@ @\\n"; \ncout << "@@@@@@@\\n"; \nbreak; \ncase 3: \ncout << "@@@@@@@\\n"; \ncout << "@ @@@@@\\n"; \ncout << "@@@ @@@\\n"; \ncout << "@@@@@ @\\n"; \ncout << "@@@@@@@\\n"; \nbreak; \ncase 4: \ncout << "@@@@@@@\\n"; \ncout << "@ @@@ @\\n"; \ncout << "@@@@@@@\\n"; \ncout << "@ @@@ @\\n"; \ncout << "@@@@@@@\\n"; \nbreak; \ncase 5: \ncout << "@@@@@@@\\n"; \ncout << "@ @@@ @\n"; \ncout << "@@@ @@@\n"; \ncout << "@ @@@ @\n"; \ncout << "@@@@@@@\n"; \nbreak; \ncase 6: \ncout << "@@@@@@@\n"; \ncout << "@ @ @ @\\n"; \ncout << "@@@@@@@\\n"; \ncout << "@ @ @ @\\n"; \ncout << "@@@@@@@\\n\\n"; \nbreak; \n} \n}',
+      task: "Использовать комманды Ctrl+C Ctrl+V для ускорения генерации написания кода.\nCtl+C - скопировать строку (выделять строку не надо).\nCtrl+V = вставить строку перед текущей",
+    },
+    {
+      theme: "Дубликация",
+      init_code:
+        'void drowCube(int res)\n{\nswitch (res){\ncase 1: cout << "@@@@@@@\\n"; \nbreak; \ncase 2: cout << "@@@@@@@\\n";',
+      desired_code:
+        'void drowCube(int res)\n{\nswitch (res){\ncase 1: cout << "@@@@@@@\\n"; \nbreak; \ncase 2: \ncout << "@@@@@@@\\n"; \ncout << "@ @@@@@\\n"; \ncout << "@@@@@@@\\n"; \ncout << "@@@@@ @\\n"; \ncout << "@@@@@@@\\n"; \nbreak; \n} \n}',
+      task: "Использовать комманду Ctrl+D для создания дубликата строки",
+    },
+  ];
   const [cur, setCur] = useState(data[0]);
 
   return (
@@ -30,18 +48,18 @@ export default function Home({ data }) {
   );
 }
 
-export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3000/api`, {
-    method: "GET",
-    headers: { "Content-Type": "application/json" },
-  });
+// export async function getServerSideProps() {
+//   const res = await fetch(`http://localhost:3000/api`, {
+//     method: "GET",
+//     headers: { "Content-Type": "application/json" },
+//   });
 
-  if (!res.ok) {
-    throw new Error(`Error: ${response.status}`);
-  }
+//   if (!res.ok) {
+//     throw new Error(`Error: ${response.status}`);
+//   }
 
-  const data = await res.json();
-  console.log(data);
+//   const data = await res.json();
+//   console.log(data);
 
-  return { props: { data } };
-}
+//   return { props: { data } };
+// }

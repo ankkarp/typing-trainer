@@ -12,7 +12,7 @@ const CodeInput = ({ initCode, desiredCode, disabled }) => {
     setCode(initCode);
   }, [initCode]);
 
-  console.log(initCode);
+  // console.log(initCode);
 
   return (
     <textarea
