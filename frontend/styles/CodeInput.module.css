@@ -1,4 +1,4 @@
-#code {
+.code {
   position: absolute;
   left: 250px;
   top: 50px;
@@ -12,4 +12,12 @@
   color: var(--code-color-main);
   border: 0px;
   resize: none;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
+
+.code ::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+} 

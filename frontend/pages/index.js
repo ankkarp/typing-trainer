@@ -5,6 +5,7 @@ import { useState } from "react";
 import path from "path";
 import Task from "../components/Task";
 import cl from "../styles/Home.module.css";
+import CodeExample from "../components/CodeExample";
 
 /**
  * Главная страница
@@ -14,17 +15,17 @@ export default function Home() {
   const data = [
     {
       theme: "Копирование/Вставка",
-      init_code:
+      defaultCode:
         'void drowCube(int res)\n{\nswitch (res){\ncase 1: cout << "@@@@@@@\\n"; \nbreak; \ncase 2: \n',
-      desired_code:
-        'void drowCube(int res)\n{\nswitch (res){\ncase 1: cout << "@@@@@@@\\n"; \nbreak; \ncase 2: \ncout << "@@@@@@@\\n"; \ncout << "@ @@@@@\\n"; \ncout << "@@@@@@@\\n"; \ncout << "@@@@@ @\\n"; \ncout << "@@@@@@@\\n"; \nbreak; \ncase 3: \ncout << "@@@@@@@\\n"; \ncout << "@ @@@@@\\n"; \ncout << "@@@ @@@\\n"; \ncout << "@@@@@ @\\n"; \ncout << "@@@@@@@\\n"; \nbreak; \ncase 4: \ncout << "@@@@@@@\\n"; \ncout << "@ @@@ @\\n"; \ncout << "@@@@@@@\\n"; \ncout << "@ @@@ @\\n"; \ncout << "@@@@@@@\\n"; \nbreak; \ncase 5: \ncout << "@@@@@@@\\n"; \ncout << "@ @@@ @\n"; \ncout << "@@@ @@@\n"; \ncout << "@ @@@ @\n"; \ncout << "@@@@@@@\n"; \nbreak; \ncase 6: \ncout << "@@@@@@@\n"; \ncout << "@ @ @ @\\n"; \ncout << "@@@@@@@\\n"; \ncout << "@ @ @ @\\n"; \ncout << "@@@@@@@\\n\\n"; \nbreak; \n} \n}',
+      exampleCode:
+        'void drowCube(int res)\n{\nswitch (res){\ncase 1: cout << "@@@@@@@\\n"; \nbreak; \ncase 2: \ncout << "@@@@@@@\\n"; \ncout << "@ @@@@@\\n"; \ncout << "@@@@@@@\\n"; \ncout << "@@@@@ @\\n"; \ncout << "@@@@@@@\\n"; \nbreak; \n}',
       task: "Использовать комманды Ctrl+C Ctrl+V для ускорения генерации написания кода.\nCtl+C - скопировать строку (выделять строку не надо).\nCtrl+V = вставить строку перед текущей",
     },
     {
       theme: "Дубликация",
-      init_code:
+      defaultCode:
         'void drowCube(int res)\n{\nswitch (res){\ncase 1: cout << "@@@@@@@\\n"; \nbreak; \ncase 2: cout << "@@@@@@@\\n";',
-      desired_code:
+      exampleCode:
         'void drowCube(int res)\n{\nswitch (res){\ncase 1: cout << "@@@@@@@\\n"; \nbreak; \ncase 2: \ncout << "@@@@@@@\\n"; \ncout << "@ @@@@@\\n"; \ncout << "@@@@@@@\\n"; \ncout << "@@@@@ @\\n"; \ncout << "@@@@@@@\\n"; \nbreak; \n} \n}',
       task: "Использовать комманду Ctrl+D для создания дубликата строки",
     },
@@ -40,8 +41,15 @@ export default function Home() {
         data={data}
       />
       <div class={cl.grid}>
-        <CodeInput initCode={cur.init_code} desiredCode={cur.desired_code} />
-        <CodeInput initCode={cur.desired_code} disabled />
+        <CodeInput
+          defaultCode={cur.defaultCode}
+          exampleCode={cur.exampleCode}
+        />
+        <CodeInput
+          defaultCode={cur.exampleCode}
+          exampleCode={cur.exampleCode}
+          disabled
+        />
       </div>
       <Task task={cur.task} />
     </>

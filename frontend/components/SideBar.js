@@ -14,7 +14,7 @@ const SideBar = ({ themes, setCur, data }) => {
       </select>
       <ul className={cl.list}>
         {themes.map((theme, index) => (
-          <li>
+          <li key={index}>
             <a
               onClick={(e) =>
                 setCur(
