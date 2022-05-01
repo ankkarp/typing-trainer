@@ -34,7 +34,6 @@ export default function Home() {
 
   return (
     <>
-      <Header theme={cur.theme} />
       <SideBar
         themes={data.map((obj) => obj.theme)}
         setCur={setCur}
