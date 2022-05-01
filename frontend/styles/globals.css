@@ -1,20 +1,19 @@
 :root {
-  --background: #9b9b9b;
-  --code-background: #383838;
-  --header-background: #646464;
-  --sidebar-background: #727272;
-  --task-background: #6e6e6e;
-  --text-color: rgb(14, 14, 14);
-  --code-color-main: rgb(241, 241, 241);
+  --main-color: #128094;
+  --sidebar-color: #3C3A3F;
+  --title-color: #EBECFA;
+  --task-text-color: #BFBFBF;
+  --input-color: #E08131;
+  --inactive-color: #B5B4B4;
+  --focus-color: #87E5FA;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Consolas, "Courier New", monospace;
-  background-color: var(--background);
-  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--main-color);
 }
 
 a {
@@ -32,6 +31,8 @@ li {
 
 ul {
   padding: 20px;
+  list-style: none;
+  text-decoration: none;
 }
 
 button,
@@ -60,7 +61,18 @@ input {
   width: 700px;
   height: 500px;
 }
-
-header {
+.title{
   text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  text-decoration: underline;
+  color: var(--title-color)
 }

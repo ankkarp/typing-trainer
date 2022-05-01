@@ -1,0 +1,14 @@
+#sidebar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 200px;
+  height: 100%;
+  background-color: var(--sidebar-color);
+
+  .list {
+    position: absolute;
+    top: 70px;
+    left: 0;
+  }
+}
