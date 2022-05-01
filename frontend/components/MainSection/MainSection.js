@@ -1,4 +1,4 @@
-import KeyBoard from "../Keyboard/Keyboard";
+import KeyBoard from "../KeyBoard/KeyBoard";
 import WordInput from "../WordInput/WordInput";
 import styles from "./MainSection.module.scss";
 
