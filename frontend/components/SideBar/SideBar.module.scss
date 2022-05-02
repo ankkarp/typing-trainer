@@ -1,14 +1,23 @@
-#sidebar {
+.sidebar {
   position: absolute;
   left: 0px;
   top: 0px;
   width: 200px;
   height: 100%;
-  background-color: var(--sidebar-color);
+  background-color: var(--code-bg-clr);
 
-  .list {
-    position: absolute;
-    top: 70px;
-    left: 0;
+  ul{
+    margin: 120px 10px;
+    justify-content: center;
+  }
+
+  li{
+    color: var(--title-clr);
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 27px;
+    text-decoration: underline;
   }
 }

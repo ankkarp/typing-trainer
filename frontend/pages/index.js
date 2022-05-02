@@ -1,5 +1,5 @@
-import MainSection from "../components/MainSection/MainSection";
-import SideBar from "../components/SideBar/SideBar";
+import MainSection from '../components/MainSection/MainSection';
+import SideBar from '../components/SideBar/SideBar';
 
 /**
  * Главная страница
@@ -7,6 +7,8 @@ import SideBar from "../components/SideBar/SideBar";
 export default function Home() {
   return (
     <>
+      <title>Тренажер</title>
+
       <SideBar />
       <MainSection />
     </>

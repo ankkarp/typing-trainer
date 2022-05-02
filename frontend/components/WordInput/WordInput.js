@@ -1,7 +1,7 @@
-import styles from "./WordInput.module.scss";
+import styles from './WordInput.module.scss';
 
 const WordInput = () => {
-  return <textarea id={styles.input}>Enter</textarea>;
+  return <textarea className={styles.wordInput} />;
 };
 
 export default WordInput;
