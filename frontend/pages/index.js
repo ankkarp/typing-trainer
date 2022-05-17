@@ -7,7 +7,7 @@ import SideBar from '../components/SideBar/SideBar';
 export default function Home() {
   return (
     <>
-      <title>Тренажер</title>
+      <title>Typing Tutor</title>
 
       <SideBar />
       <MainSection />

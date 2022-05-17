@@ -4,7 +4,7 @@ import styles from './SideBar.module.scss';
  * Боковая панель
  */
 const SideBar = () => {
-  const modes = ['Стихи', 'Код', 'Слова', 'Символы'];
+  const modes = ['Poems', 'Code', 'Words', 'Symbols'];
 
   return (
     <nav className={styles.sidebar}>
