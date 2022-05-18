@@ -8,4 +8,11 @@
         display: flex;
         gap: 5px
     }
+
+    .space{
+        width: 350px;
+        height: 64px;
+        background-color: var(--code-bg-clr);
+        border-radius: 16px;
+    }
 }

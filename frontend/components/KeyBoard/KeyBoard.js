@@ -3,7 +3,13 @@ import styles from './KeyBoard.module.scss';
 import { useEffect, useState } from 'react';
 
 const KeyBoard = ({ pressedKeys }) => {
-  const topKeys = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'];
+  const topKeys = [
+    '1234567890-=',
+    'QWERTYUIOP{}',
+    'ASDFGHJKL:"',
+    'ZXCVBNM<>?',
+    ' ',
+  ];
 
   return (
     <div className={styles.keyboard}>

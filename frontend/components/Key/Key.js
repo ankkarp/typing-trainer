@@ -6,8 +6,14 @@ var cx = classNames.bind(styles);
 
 const Key = ({ syl, active }) => {
   return (
-    <div className={styles.outer}>
-      <div className={cx({ [styles.inner]: true, [styles.active]: active })}>
+    <div className={cx({ [styles.outer]: true, [styles.space]: syl === ' ' })}>
+      <div
+        className={cx({
+          [styles.inner]: true,
+          [styles.active]: active,
+          [styles.space]: syl === ' ',
+        })}
+      >
         {syl}
       </div>
     </div>
