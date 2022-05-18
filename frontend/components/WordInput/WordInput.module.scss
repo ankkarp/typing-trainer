@@ -1,13 +1,16 @@
 .container{
     position: relative;
-    // width: 64%;
-    // height: 300px;
+    width: 60%;
+    height: 300px;
     border-radius: 20px;
     background-color: var(--code-bg-clr);
     padding: 15px;
     color: var(--inactive-clr);
     border: #2D6976 solid 4px;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .text{
         // position: absolute;

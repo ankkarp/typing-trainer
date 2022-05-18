@@ -37,7 +37,7 @@ const MainSection = () => {
       }
       const text = await response.json();
 
-      const parsed_text = text[0]['lines'].join('\n').split('');
+      const parsed_text = text[0]['lines'].slice(0, 14).join('\n').split('');
       setTask(parsed_text);
     };
 
