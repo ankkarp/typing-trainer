@@ -1,10 +1,10 @@
-import styles from './SideBar.module.scss';
+import styles from "./SideBar.module.scss";
 
 /**
  * Боковая панель
  */
 const SideBar = () => {
-  const modes = ['Poems', 'Code', 'Words', 'Symbols'];
+  const modes = ["Poems", "Code", "Words", "Symbols"];
 
   return (
     <nav className={styles.sidebar}>

@@ -10,7 +10,7 @@
   align-items: center;
   gap: 50px;
   transform: translateX(-4%);
-  
+
   h1 {
     margin: 10px;
     width: 100%;
@@ -22,5 +22,22 @@
     font-size: 40px;
     text-decoration: underline;
     color: var(--title-clr);
+  }
+
+  .newText {
+    background-color: var(--code-bg-clr);
+    width: 200px;
+    height: fit-content;
+    border-radius: 5px;
+    color: var(--input-clr);
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: rgb(241, 188, 13);
+      background-color: rgb(51, 51, 51);
+    }
   }
 }

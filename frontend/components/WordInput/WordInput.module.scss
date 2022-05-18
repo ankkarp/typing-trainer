@@ -1,39 +1,39 @@
-.container{
-    position: relative;
-    width: 60%;
-    height: 300px;
-    border-radius: 20px;
-    background-color: var(--code-bg-clr);
-    padding: 15px;
+.container {
+  position: relative;
+  width: 60%;
+  height: 200px;
+  border-radius: 20px;
+  background-color: var(--code-bg-clr);
+  padding: 15px;
+  color: var(--inactive-clr);
+  border: #2d6976 solid 4px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .text {
+    // position: absolute;
+    // right: 0;
+    // left: 0;
+    // top: 0;
+    // bottom: 0;
     color: var(--inactive-clr);
-    border: #2D6976 solid 4px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  }
 
-    .text{
-        // position: absolute;
-        // right: 0;
-        // left: 0;
-        // top: 0;
-        // bottom: 0;
-        color: var(--inactive-clr)
-    }
+  .input {
+    // padding:19px;
+    // position: absolute;
+    // right: 0;
+    // left: 0;
+    // top: 0;
+    // bottom: 0;
+    color: var(--input-clr);
+  }
 
-    .input{
-        // padding:19px;
-        // position: absolute;
-        // right: 0;
-        // left: 0;
-        // top: 0;
-        // bottom: 0;
-        color: var(--input-clr)
-    }
-
-    // span{
-    //     padding: 10px 0;
-    // }
+  // span{
+  //     padding: 10px 0;
+  // }
 }
 
 // .wordInput {
