@@ -113,7 +113,11 @@ const MainSection = () => {
       <KeyBoard pressedKeys={pressedKeys} />
       <button
         className={styles.newText}
-        onClick={() => getResource("https://poetrydb.org", TITLES)}
+        onClick={() => {
+          setTask("Loading...".split(""));
+          getResource("https://poetrydb.org", TITLES);
+          setInput([]);
+        }}
       >
         Next
       </button>
